@@ -66,39 +66,20 @@ capstone-1/
 
 ---
 
-## Quickstart
+## 🚀 Quick Start
 
-### 1. Environment Setup
-```bash
-python -m venv .venv
-# On Windows:
-.venv\Scripts\pip install -r requirements.txt
-# On Linux/macOS:
-.venv/bin/pip install -r requirements.txt
-```
+### Windows
 
-### 2. Run Tests
-```bash
-.venv\Scripts\pytest -v tests/
-```
+You don't need to manually create a virtual environment or install the dependencies.
 
-### 3. Run Benchmarks
-```bash
-.venv\Scripts\python -m autocomplete_engine.benchmarks.benchmark_runner --dataset-size 100000 --export results.json --export-md benchmark_report.md
-```
+Simply:
 
-### 4. Start REST API & Demo Server
-```bash
-.venv\Scripts\python -m uvicorn autocomplete_engine.api.server:app --reload --port 8000
-```
-Open `http://127.0.0.1:8000` in your web browser.
+1. Download or clone this repository.
+2. Open the project folder.
+3. Double-click `run.bat`.
+4. The application will automatically set up and start the server.
+5. The website will open in your browser.
 
----
+The application will be available at:
 
-## API Endpoints
-
-- `GET /api/suggest?q={prefix}&k={5}&fuzzy={true}&lang={latin}`: Returns Top-K completions and typo corrections with response latency header `X-Process-Time-Ms`.
-- `POST /api/insert`: Dynamically inserts a word (`{"word": "...", "score": 100.0}`).
-- `POST /api/query`: Dynamically reinforces query popularity (`{"query": "...", "delta": 1.0}`).
-- `GET /api/stats`: Returns memory and compression statistics across all script trees.
-- `GET /api/benchmark?size={5000}`: Triggers and returns comparative benchmark metrics.
+http://127.0.0.1:8000
