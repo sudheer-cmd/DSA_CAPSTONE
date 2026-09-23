@@ -80,4 +80,4 @@ Simply:
 4. The application will automatically set up and start the server.
 5. The website will open in your browser.
 
-The working model of these website : https://dsa-capstone-x6xn.onrender.com/
+The working model of Multilingual Autocomplete & Query Suggestion Engine : https://dsa-capstone-x6xn.onrender.com/
