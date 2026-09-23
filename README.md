@@ -80,6 +80,3 @@ Simply:
 4. The application will automatically set up and start the server.
 5. The website will open in your browser.
 
-The application will be available at:
-
-http://127.0.0.1:8000
